@@ -1,1 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSustentável</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            line-height:1.6;
+        }
+
+        header{
+            background:#2e7d32;
+            color:white;
+            padding:15px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:sticky;
+            top:0;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        section{
+            padding:60px 10%;
+        }
+
+        h2{
+            color:#2e7d32;
+            margin-bottom:20px;
+        }
+
+        .banner{
+            height:90vh;
+            background:url("img/banner.jpg") center/cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+        }
+
+        .banner-content{
+            background:rgba(0,0,0,0.5);
+            padding:30px;
+            border-radius:10px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:#4caf50;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+            margin-top:30px;
+        }
+
+        .card{
+            background:#f4f4f4;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        .contato form{
+            display:flex;
+            flex-direction:column;
+            gap:15px;
+            max-width:600px;
+        }
+
+        input, textarea{
+            padding:12px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        button{
+            background:#2e7d32;
+            color:white;
+            border:none;
+            padding:12px;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        footer{
+            background:#1b5e20;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>🌱 AgroSustentável</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#producao">Produção</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#desafios">Desafios</a></li>
+                <li><a href="#futuro">Futuro</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner" id="inicio">
+        <div class="banner-content">
+            <h2>Produzir Mais, Preservar Melhor</h2>
+            <p>
+                Tecnologia, inovação e sustentabilidade para o futuro do agronegócio.
+            </p>
+            <a href="#producao" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- PRODUÇÃO AGRÍCOLA -->
+    <section id="producao">
+        <h2>🚜 Produção Agrícola</h2>
+
+        <p>
+            O agronegócio é um dos pilares da economia brasileira,
+            gerando empregos, exportações e garantindo a produção de alimentos.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Crescimento Econômico</h3>
+                <p>Importância do setor para o PIB e exportações.</p>
+            </div>
+
+            <div class="card">
+                <h3>Tecnologia</h3>
+                <p>Máquinas inteligentes, sensores e automação.</p>
+            </div>
+
+            <div class="card">
+                <h3>Produtividade</h3>
+                <p>Maior eficiência na produção agrícola.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUSTENTABILIDADE -->
+    <section id="sustentabilidade">
+        <h2>🌿 Sustentabilidade no Campo</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Conservação do Solo</h3>
+                <p>Plantio direto e rotação de culturas.</p>
+            </div>
+
+            <div class="card">
+                <h3>Uso Inteligente da Água</h3>
+                <p>Irrigação automatizada e monitoramento.</p>
+            </div>
+
+            <div class="card">
+                <h3>Energia Renovável</h3>
+                <p>Painéis solares, energia eólica e biogás.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESAFIOS -->
+    <section id="desafios">
+        <h2>⚠️ Desafios Ambientais</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Desmatamento</h3>
+                <p>Impactos sobre biodiversidade e ecossistemas.</p>
+            </div>
+
+            <div class="card">
+                <h3>Uso Excessivo da Água</h3>
+                <p>Necessidade de gestão eficiente dos recursos hídricos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Emissão de Carbono</h3>
+                <p>Redução das emissões por meio da inovação.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUÇÕES E FUTURO -->
+    <section id="futuro">
+        <h2>🚀 Soluções e Futuro</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Agricultura de Precisão</h3>
+                <p>Uso de sensores, GPS e inteligência de dados.</p>
+            </div>
+
+            <div class="card">
+                <h3>Drones Agrícolas</h3>
+                <p>Monitoramento eficiente das lavouras.</p>
+            </div>
+
+            <div class="card">
+                <h3>Agricultura Regenerativa</h3>
+                <p>Recuperação do solo e preservação ambiental.</p>
+            </div>
+
+            <div class="card">
+                <h3>Energia Limpa</h3>
+                <p>Fontes renováveis para reduzir impactos ambientais.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section id="extras">
+        <h2>📊 Recursos Interativos</h2>
+
+        <ul>
+            <li>Calculadora de impacto ambiental</li>
+            <li>Quiz sobre sustentabilidade</li>
+            <li>Galeria de imagens interativa</li>
+            <li>Mapa agrícola digital</li>
+        </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato" id="contato">
+        <h2>📩 Entre em Contato</h2>
+
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+
+            <input type="email" placeholder="Seu e-mail" required>
+
+            <textarea rows="5" placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <br>
+
+        <p>
+            "Cada escolha sustentável feita hoje garante recursos naturais
+            para as futuras gerações."
+        </p>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>
+            © 2026 AgroSustentável | Tecnologia, Produção e Preservação Ambiental
+        </p>
+    </footer>
+
+</body>
+</html>
